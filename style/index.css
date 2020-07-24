@@ -1,0 +1,598 @@
+/* Reset START ...*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*** ... Reset END ***/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+header {
+    background-color: lightgray;
+    height: 9rem;
+}
+h1 {
+    font-size: 3rem;
+}
+nav {
+    margin-left: 2rem;
+
+}
+nav a {
+    border: .1rem solid black;
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: -.4rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    border: .1rem solid white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: -.4rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+}
+
+.section1 {
+    display: flex;
+    margin: 2rem;
+}
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-items: space-between;*/
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section2 > div {
+    
+    /*border: .1rem solid black;*/
+    /*margin: .2rem;*/
+    height: 30rem;
+    width: 30rem;
+    padding: 2rem;
+}
+
+.intro {
+    margin-left: 2rem;
+}
+
+.name {
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: lightgray;
+    height: 13.5rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: .5rem;
+    width: 100%;
+}
+
+#contactButton {
+    
+    padding: 1rem;
+    border: .1rem solid black;
+    background-color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer > div {
+    padding: 1rem;
+}
+.wrapper {
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2rem solid black;
+    width: 50rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    margin: 2rem;
+
+}
+
+.container #fname {
+    margin: 1rem;
+
+}
+
+.container #lname {
+    margin: 1rem;
+
+}
+
+.container #country {
+    margin: 1rem;
+
+}
+
+.container #subject {
+    margin: 1rem;
+    width: 100%;
+
+}
+
+form {
+    margin: .5rem;
+}
+
+.myProjects {
+    padding-top: 1rem;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    text-align: center;
+    width: 18.7rem;
+
+}
+
+.myProjects a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    /*text-transform: uppercase;*/
+}
+
+.myProjects:hover {
+    background-color: white;
+    color: black;
+    border: .5rem solid black;
+}
+
+.myProjects a:visited {
+    color: white;
+}
+
+.aboutMe {
+    font-size: 1.8rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.aboutContent {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.aboutContent2 {
+    width: 80%;
+    margin: 1rem auto;
+    text-align: justify;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 800px) {
+    header {
+        
+    }
+    nav {
+        
+    }
+    
+    section.section1 {
+        flex-direction: column;
+        margin-top: 2rem;
+        
+    
+    }
+
+    section.section1 img {
+      object-fit: cover;
+      object-position: 50% 50%;
+      width: 100%;
+      height: 33rem;
+    
+    }
+
+    section.section1 div.intro {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    section.section1 div.intro div.aboutMe {
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .section2 {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 auto;
+        width: 96.5%;
+        
+    }
+    
+    .section2 > div {
+        
+        width: 47.5%;
+        height: 60vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        padding: .7rem;;
+
+    }
+    
+    .section2 div img {
+        object-fit: cover;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer {
+        height: 10rem;
+    }
+    
+    footer span.hide {
+        display: none;
+    }
+
+  }
+  
+@media only screen and (max-width: 500px) {
+    div.wrapper header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 22rem;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: white;
+    }
+
+    div.wrapper header .name {
+        margin-left: 0;
+    }
+    
+    div.wrapper header nav {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 0;
+    }
+    
+
+    nav a {
+        border: .1rem solid black;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: 1.5rem;
+        background-color: white;
+        color: black;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    nav a:hover {
+        border: none;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+    }
+
+    section.section1 {
+        flex-direction: column;
+        margin-top: .5rem;
+        
+    
+    }
+
+    section.section1 img {
+      object-fit: cover;
+      /*object-position: 0 5%;*/
+      width: 100%;
+      height: 30rem;
+    
+    }
+
+    section.section1 div.intro {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    section.section1 div.intro div.aboutMe {
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .section2 {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 auto;
+        width: 94%;
+        
+    }
+    
+    .section2 > div {
+        
+        width: 46.5%;
+        height: 36vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        padding: .7rem;;
+
+    }
+    
+    .section2 div img {
+        object-fit: cover;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer {
+    height: 10rem;
+    }
+
+    footer span.hide {
+        display: none;
+    }
+
+    .container {
+        border: 1rem solid black;
+        width: 80%;
+        padding-right: 2rem;
+        padding-left: 1rem;
+        margin: 2rem auto;
+    
+    }
+    .aboutContent {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .aboutContent2 {
+        width: 90%;
+        margin: 1rem auto;
+        text-align: justify;
+    }
+
+  }
+
+
+@media only screen and (max-width: 375px) {
+  
+    .wrapper {
+        width: 94%;
+        margin: 0 auto;
+    }
+    
+    div.wrapper header {
+        display: flex;
+        flex-direction: column;
+        height: 17rem;
+        width: 100%;
+        padding: 0;
+        background-color: white;
+    }
+
+    div.wrapper header .name {
+        font-size: 2rem;
+    }
+    
+    div.wrapper header nav {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        height: 30vh;
+    }
+    
+
+    nav a {
+        border: .1rem solid black;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: .5rem;
+        background-color: white;
+        color: black;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    nav a:hover {
+        border: none;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: -.4rem;
+        font-size: .5rem;
+        background-color: black;
+        color: white;
+    }
+
+    section.section1 {
+        flex-direction: column;
+        margin-top: .5rem;
+        
+    
+    }
+
+    section.section1 img {
+      object-fit: scale-down;
+      /*object-position: 0 5%;*/
+      width: 100%;
+      height: 20rem;
+    
+    }
+
+    section.section1 div.intro {
+        display: flex;
+        flex-flow: column wrap;
+        /*align-items: center;*/
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    section.section1 div.intro div.aboutMe {
+        text-align: justify;
+        padding-top: 0;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+
+    .section2 {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0 auto;
+        width: 94%;
+        
+    }
+    
+    .section2 > div {
+        
+        width: 34.5%;
+        height: 24vh;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+        padding: .2rem;;
+
+    }
+    
+    .section2 div img {
+        object-fit: cover;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer {
+    height: 10rem;
+    }
+
+    footer span.hide {
+        display: none;
+    }
+
+    .container {
+        border: none;
+        width: 76%;
+        height: 70vh;
+        padding-right: 3rem;
+        padding-left: 1rem;
+        margin: 0 auto; 
+    
+    }
+    .aboutContent {
+        width: 60%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .aboutContent2 {
+        width: 70%;
+        text-align: justify;
+        padding: 7%;
+    }
+    
+    h1.main {
+        text-align: center; 
+    }
+
+}
+  
